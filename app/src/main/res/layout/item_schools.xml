@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            type = "com.example.nychighschools.data.SchoolsResponse"
+            name = "schools"/>
+
+         <variable
+            name="listener"
+            type="com.example.nychighschools.home.OnSchoolSelected" />
+    </data>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="5dp"
+        android:layout_margin="5dp"
+        app:cardBackgroundColor="@color/colorPrimary"
+        android:onClick="@{()-> listener.onSchoolSelected(schoolsResponse)}">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation = "vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvAlbumsId"
+                android:text="@{schools.schoolName}"
+                tools:text="Albums ID"
+                android:textSize="30sp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"/>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</layout>
