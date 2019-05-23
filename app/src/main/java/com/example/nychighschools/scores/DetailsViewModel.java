@@ -24,7 +24,7 @@ public class DetailsViewModel extends ViewModel {
         compositeDisposable = new CompositeDisposable();
     }
 
-    public LiveData<List<SATScores>> getAlbumsObservable() {
+    public LiveData<List<SATScores>> getScoresObservable() {
         return scoresObservable;
     }
 

@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity implements OnSchoolSelected 
 
         //observes/subscribes to observarable in homeviewmodel and passes the list data from
         // there to the recycler view
-//        homeViewModel.performSearch();
+        homeViewModel.performSearch();
 
     }
 

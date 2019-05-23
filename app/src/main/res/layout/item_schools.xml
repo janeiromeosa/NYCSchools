@@ -18,7 +18,7 @@
         app:cardCornerRadius="5dp"
         android:layout_margin="5dp"
         app:cardBackgroundColor="@color/colorPrimary"
-        android:onClick="@{()-> listener.onSchoolSelected(schoolsResponse)}">
+        android:onClick="@{()-> listener.onSchoolSelected(schools)}">
 
         <LinearLayout
             android:layout_width="match_parent"
